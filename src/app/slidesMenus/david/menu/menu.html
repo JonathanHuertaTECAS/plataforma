@@ -1,0 +1,41 @@
+<!-- Page Content Holder -->
+<div id="content">
+    <nav class="navbar navbar-expand-lg menu-arriba">
+        <div class="container-fluid">
+            
+            <button type="button" id="sidebarCollapse" class="navbar-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="fecha-title align-self-center">
+                <h4>Pal’ Negocio</h4>
+                <p>Miercoles <span> 17 de noviembre 2021</span></p>
+            </div>
+            <button class="btn btn-mrd d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-align-justify"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav ml-auto menu-A-izq">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fas fa-envelope"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+                    </li>
+                    <li>
+                        <div class="dropdown opcionuser">
+                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                                <span>IS</span> Isabel Salazar
+                            </button>
+                            <div class="dropdown-menu nav-options" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#" [routerLinkActive]="['activado']" [routerLink]="['/perfil']">Ver perfil</a>
+                                <a class="dropdown-item" href="#">Cerrar sesión</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>

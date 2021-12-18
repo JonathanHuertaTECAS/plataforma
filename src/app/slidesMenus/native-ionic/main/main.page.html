@@ -1,0 +1,68 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons ion-button icon-only menuToggle slot="start" *ngIf="mobile">
+      <ion-menu-button></ion-menu-button>
+      <strong class="product">{{ product }}</strong>
+      <br>
+    </ion-buttons>
+    <ion-item routerDirection="root" lines="none" detail="false" *ngIf="!mobile">
+      <ion-menu-button auto-hide="false" (click)="slide();"></ion-menu-button>
+      <ion-title>
+        <strong class="product">{{ product }}</strong>
+        <br>
+        <strong class="day">{{weekday}}</strong>{{day}} de <span class="month">{{month}}</span>{{year}}
+      </ion-title>
+    </ion-item>
+    <ion-item routerDirection="root" routerLink="/main/inbox" slot="end" lines="none" detail="false" *ngIf="!mobile">
+      <ion-icon class="itemsMenu" slot="start" [ios]="'mail-outline'" [md]="'mail'"></ion-icon>
+    </ion-item>
+    <ion-item routerDirection="root" routerLink="/main/productos" slot="end" lines="none" detail="false"
+      *ngIf="!mobile">
+      <ion-icon class="itemsMenu" slot="start" [ios]="'notifications-outline'" [md]="'notifications'"></ion-icon>
+    </ion-item>
+    <ion-item slot="end">
+      <ion-accordion-group *ngIf="!mobile">
+        <ion-accordion>
+          <ion-item slot="header">
+            <span class="profileName">{{capitalNames}}</span>
+            <ion-label>{{name}}</ion-label>
+          </ion-item>
+          <ion-list slot="content">
+            <ion-item routerLink="/main/perfil">
+              <ion-label>Ver Perfil</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label routerLink="/main/cuenta">Cuenta</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Cerrar Sesión</ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-accordion>
+      </ion-accordion-group>
+    </ion-item>
+  </ion-toolbar>
+  <ion-fab vertical="top" horizontal="end" *ngIf="mobile">
+    <ion-fab-button>
+      <ion-icon name="menu"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="bottom">
+      <ion-fab-button>
+        <ion-icon routerLink="/main/inbox" name="mail"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon routerLink="/main/notifications" name="notifications"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ main }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <router-outlet></router-outlet>
+  
+</ion-content>

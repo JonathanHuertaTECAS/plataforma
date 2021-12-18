@@ -1,5 +1,7 @@
 {
-  "name": "ProductoDigital",
-  "integrations": {},
+  "name": "palNegocio",
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

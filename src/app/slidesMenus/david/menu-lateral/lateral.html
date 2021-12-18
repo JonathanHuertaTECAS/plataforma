@@ -1,0 +1,39 @@
+<div class="wrapper">
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <a href="#" [routerLink]="['/home']"><img src="assets/libs/inher/images/logo-pal-negocio-lateral.png" alt="Logo Pal' Negocio" class="w-75 mx-auto d-block" ></a>
+        </div>
+        <ul class="list-unstyled compuestos">
+            <li>
+                <a [routerLinkActive]="['activado']" [routerLink]="['/home']">
+                    <i class="fas fa-home"></i>Inicio
+                </a>
+            </li>
+            <!-- <li>
+                <a href="#" [routerLinkActive]="['activado']" [routerLink]="['/productos']"> <i class="fas fa-cart-plus"></i> Productos</a>
+            </li> -->
+            <li>
+                <a href="#subcredito" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle flchita">
+                    <i class="fas fa-credit-card"></i>Mi crédito
+                </a>
+                <ul class="collapse list-unstyled" id="subcredito">
+                    <li>
+                        <a href="#" [routerLinkActive]="['activado']" [routerLink]="['/credito']">Crédito</a>
+                    </li>
+                    <li>
+                        <a href="#" [routerLinkActive]="['activado']" [routerLink]="['/fecha-de-pago']">Fecha de pago</a>
+                    </li>
+                    <li>
+                        <a href="#" [routerLinkActive]="['activado']" [routerLink]="['/contrato']">Mis contratos</a>
+                    </li>
+                     <li>
+                        <a href="#" [routerLinkActive]="['activado']" [routerLink]="['/solicitud']">Solicitud de credito</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" [routerLinkActive]="['activado']" [routerLink]="['/sucursal']"><i class="fas fa-map-marker-alt"></i> Sucursal cercana</a>
+            </li>
+        </ul>
+    </nav>
+</div>

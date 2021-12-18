@@ -1,0 +1,89 @@
+ion-menu-button {
+  color: var(--ion-color-primary);
+}
+ion-header.md{
+  z-index: initial;
+}
+ion-toolbar {
+  --background: #ffffff;
+}
+ion-item {
+  --background: #ffffff;
+  color: black;
+}
+ion-item.item-inner {
+  border: none !important;
+}
+ion-list {
+  background: #ffffff;
+}
+.menuButton {
+  color: var(--ion-color-primary);
+}
+
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.day {
+  text-transform: capitalize;
+  color: #594196;
+}
+
+.month {
+  text-transform: capitalize;
+}
+
+.product {
+  color: #594196;
+}
+
+.menuProfile {
+  background: #594196;
+  color: white;
+}
+.itemsMenu{
+  color: #262261;
+  font-size: 25px;
+  border: solid transparent 2px;
+  padding: 10px;
+  vertical-align: middle;
+}
+.profileName {
+  background: #CEC7E0;
+  color: black;
+  padding: 3px;
+  font-size: 30px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 6px 0px rgb(0 0 0 / 16%);
+  -webkit-box-shadow: 3px 3px 6px 0px rgb(0 0 0 / 16%);
+  -moz-box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.16);
+  text-decoration: none;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 20px;
+}
