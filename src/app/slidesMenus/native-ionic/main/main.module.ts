@@ -9,6 +9,7 @@ import { MainPageRoutingModule } from './main-routing.module';
 import { MainPage } from './main.page';
 import { HomeComponent } from 'src/app/pages/home/home.component';
 import { MycreditComponent } from 'src/app/pages/mycredit/mycredit.component';
+import { SucursalComponent } from 'src/app/pages/sucursal/sucursal.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,7 @@ import { MycreditComponent } from 'src/app/pages/mycredit/mycredit.component';
     IonicModule,
     MainPageRoutingModule
   ],
-  declarations: [MainPage,HomeComponent,MycreditComponent],
+  declarations: [MainPage,HomeComponent,MycreditComponent,SucursalComponent],
   exports: [MainPage]
 })
 export class MainPageModule {}
