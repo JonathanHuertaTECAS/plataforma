@@ -20,11 +20,11 @@ export class NativeSlideComponent implements OnInit {
     this.menuSlide = true;
     this.img = '../../../assets/libs/inher/images/logo-pal-negocio-lateral.png';
   }
-  closeSlide(){
-    if(this.menuSlide){
+  closeSlide() {
+    if (this.menuSlide) {
       this.menuSlide = false;
     }
-    else{
+    else {
       this.menuSlide = true;
     }
   }

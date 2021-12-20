@@ -28,7 +28,7 @@ export class MainPage implements OnInit {
     if (query.matches) {
       this.mobile = true;
     }
-    else{
+    else {
       this.mobile = false;
     }
   }
@@ -37,18 +37,18 @@ export class MainPage implements OnInit {
     if (query.matches) {
       this.mobile = true;
     }
-    else{
+    else {
       this.mobile = false;
     }
     this.name = 'Jonathan Huerta';
     const arrayNames = this.name.split(' ');
-    this.capitalNames = arrayNames[0].slice(0,arrayNames.length-1)+arrayNames[1].slice(0,arrayNames.length-1);
+    this.capitalNames = arrayNames[0].slice(0, arrayNames.length - 1) + arrayNames[1].slice(0, arrayNames.length - 1);
     this.icon = true;
     this.product = 'Pal’ Negocio';
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    this.weekday = new Date().toLocaleDateString(undefined,{weekday:'long'});
+    this.weekday = new Date().toLocaleDateString(undefined, { weekday: 'long' });
     this.day = ' ' + new Date().getDate();
-    this.month =  new Date().toLocaleDateString(undefined,{month:'long'});
+    this.month = new Date().toLocaleDateString(undefined, { month: 'long' });
     this.year = ' ' + new Date().getFullYear();
     this.main = this.activatedRoute.snapshot.paramMap.get('id');
   }

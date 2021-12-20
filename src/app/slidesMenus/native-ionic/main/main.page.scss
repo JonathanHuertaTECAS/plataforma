@@ -1,23 +1,28 @@
 ion-menu-button {
   color: var(--ion-color-primary);
 }
-ion-header.md{
+
+ion-header.md {
   z-index: initial;
 }
+
 ion-toolbar {
   --background: #ffffff;
 }
+
 ion-item {
   --background: #ffffff;
-  color: black ;
+  color: black;
 }
 
 ion-list {
   background: #ffffff;
 }
+
 .menuButton {
   color: var(--ion-color-primary);
 }
+
 ion-content {
   --background: #ffffff;
   --color: black;
@@ -28,10 +33,12 @@ ion-accordion.accordion-expanded ion-item[slot="header"] {
   --color: #FFAB00;
   --border: none;
 }
+
 ion-accordion.accordion-collapsed ion-item[slot="header"] {
   --color: #FFAB00;
   --border: none;
 }
+
 ion-accordion.accordion-collapsing ion-item[slot="header"] {
   --color: #FFAB00;
   --border: none;
@@ -79,13 +86,15 @@ ion-accordion.accordion-collapsing ion-item[slot="header"] {
   background: #594196;
   color: white;
 }
-.itemsMenu{
+
+.itemsMenu {
   color: #262261;
   font-size: 25px;
   border: solid transparent 2px;
   padding: 10px;
   vertical-align: middle;
 }
+
 .profileName {
   background: #CEC7E0;
   color: black;
@@ -94,7 +103,7 @@ ion-accordion.accordion-collapsing ion-item[slot="header"] {
   border-radius: 4px;
   box-shadow: 3px 3px 6px 0px rgb(0 0 0 / 16%);
   -webkit-box-shadow: 3px 3px 6px 0px rgb(0 0 0 / 16%);
-  -moz-box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.16);
+  -moz-box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.16);
   text-decoration: none;
   height: 50px;
   width: 50px;

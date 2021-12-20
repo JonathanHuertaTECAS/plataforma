@@ -1,0 +1,109 @@
+<ion-content [fullscreen]="true">
+
+  <ion-card class="headerCard">
+    <ion-card-content>
+      <br>
+      <ion-card class="bannerHeader">
+        <ion-card-header>
+          <ion-card-title>
+            <h1 class="title"><strong>Mi crédito</strong></h1>
+          </ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-card-content>
+    <img class="bannerImg" src="assets/libs/inher/images/icono-credito.png" alt="Credito">
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        <h4>Crédito aprobado</h4>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+
+          <ion-col class="card-box-credito">
+            <h5>Felicidades tu crédito es:</h5>
+            <h2>$10,000.00</h2>
+          </ion-col>
+
+          <ion-col class="card-box-credito">
+            <h5>Pago <span>Mensual</span></h5>
+            <p>$1,638.34 pesos</p>
+          </ion-col>
+
+          <ion-col class="card-box-credito">
+            <h5>Plazo</h5>
+            <p>4 mensualidades</p>
+          </ion-col>
+
+          <ion-col class="card-box-credito-final">
+            <h5>Número de la solicitud</h5>
+            <p>0000001</p>
+          </ion-col>
+
+        </ion-row>
+        <hr class="divisor">
+        <ion-row>
+
+          <ion-col class="secondHeader">
+            <ion-radio-group value="biff">
+              <ion-list-header>
+                <ion-label>
+                  <h4>¿Comó quieres recibir tu dinero?</h4>
+                </ion-label>
+              </ion-list-header>
+              <ion-item>
+                <ion-label>Orden de pago</ion-label>
+                <ion-radio slot="start" (click)="tabpane('odp')"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>Transferencia</ion-label>
+                <ion-radio slot="start" (click)="tabpane('transfer')"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>Sucursal cercana</ion-label>
+                <ion-radio slot="start" (click)="tabpane('sucursal')"></ion-radio>
+              </ion-item>
+            </ion-radio-group>
+          </ion-col>
+
+          <ion-col class="tabPaneCard">
+            <div *ngIf="odp" aria-labelledby="ordenPago">
+              <h5 class="text-center">Orden de pago</h5>
+              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit nisi, varius
+                pretium ligula id, auctor vestibulum velit.</p>
+            </div>
+            <div *ngIf="transfer" aria-labelledby="transfer">
+              <h5>Transferencia bancaria</h5>
+              <ion-item class="form-group">
+                <ion-label position="floating">Cuenta CLABE:</ion-label>
+                <ion-input placeholder="0000000000000000"></ion-input>
+              </ion-item>
+              <ion-item class="form-group">
+                <ion-label position="floating">Banco:</ion-label>
+                <ion-input placeholder="Banco"></ion-input>
+              </ion-item>
+              <ion-item class="form-group">
+                <ion-label position="floating">Cuenta:</ion-label>
+                <ion-input placeholder="0000 0000 0000 0000"></ion-input>
+              </ion-item>
+            </div>
+            <div *ngIf="sucursal" aria-labelledby="sucursalCercana">
+              <h5 class="text-center">Sucursal cercana</h5>
+              <iframe src="https://demo.came.org.mx/mapa-came/" class="mapa-bgo"></iframe>
+            </div>
+          </ion-col>
+
+        </ion-row>
+        <ion-row>
+          <ion-col class="finalButtons">
+            <ion-button class="secondButton">Tal vez después</ion-button>
+            <ion-button>Acepto</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

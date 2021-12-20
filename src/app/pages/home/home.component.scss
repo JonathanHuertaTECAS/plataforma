@@ -97,22 +97,28 @@ ion-col {
     background: #F2F2F2;
     width: 338px;
     margin: 0;
+
+    @media (max-width: 1024px) {
+      width: auto;
+    }
   }
 }
-.bbva{
-    font-size: 28px;
-    color: #017EAC;
-    text-align: center;
-    font-weight: 700;
+
+.bbva {
+  font-size: 28px;
+  color: #017EAC;
+  text-align: center;
+  font-weight: 700;
 }
 
-table{
-    color: black;
-    tr{
-        td{
-            width: 50%;
-            text-align: left;
-            padding: 3px;
-        }
+table {
+  color: black;
+
+  tr {
+    td {
+      width: 50%;
+      text-align: left;
+      padding: 3px;
     }
+  }
 }
