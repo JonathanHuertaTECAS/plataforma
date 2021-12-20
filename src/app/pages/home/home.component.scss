@@ -1,0 +1,118 @@
+.bannerHeader {
+  background: #D6E9EF;
+}
+
+.contentCard {
+  font-size: 20px;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.bannerImg {
+  position: absolute;
+  right: 1%;
+  top: 2%;
+  width: 280px;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.headerCard {
+  height: 230px;
+  box-shadow: none;
+}
+
+.nameUser {
+  @media (max-width: 1024px) {
+    font-size: smaller;
+    text-align-last: center;
+  }
+}
+
+.cardHeader {
+  background: #594196;
+  text-align: center;
+  padding: 10px;
+
+  ion-card-title {
+    font-size: 14px;
+    color: white;
+  }
+}
+
+ion-card-content.cardBody {
+  text-align: center;
+  font-size: 16px;
+
+  img {
+    margin: 10% 13% 10px 13%;
+    width: 55%;
+  }
+
+}
+
+.card-content-md {
+  p {
+    text-align: center;
+    font-size: 16px;
+    margin: 8px 0px;
+    color: black;
+  }
+
+  h5 {
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 28px;
+    color: #FFAB00;
+  }
+
+  ion-button {
+    --background: #594196;
+    --background-activated: #3880ff;
+    --background-activated-opacity: 1;
+    --background-focused: #3880ff;
+    --background-focused-opacity: 1;
+    --background-hover: #ffffff;
+    --background-hover-opacity: 1;
+    --border-color: #594196;
+    --border-radius: 8px;
+    --border-style: solid;
+    --border-width: 1px;
+    --color: #ffffff;
+    --color-activated: #ffffff;
+    --color-focused: #ffffff;
+    --color-hover: #594196;
+    transition: color .65s ease-in-out, background-color .65s ease-in-out, border-color .65s ease-in-out, box-shadow .65s ease-in-out;
+  }
+}
+
+ion-col {
+  ion-card {
+    height: 100%;
+    background: #F2F2F2;
+    width: 338px;
+    margin: 0;
+  }
+}
+.bbva{
+    font-size: 28px;
+    color: #017EAC;
+    text-align: center;
+    font-weight: 700;
+}
+
+table{
+    color: black;
+    tr{
+        td{
+            width: 50%;
+            text-align: left;
+            padding: 3px;
+        }
+    }
+}

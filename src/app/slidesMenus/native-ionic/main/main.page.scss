@@ -9,16 +9,32 @@ ion-toolbar {
 }
 ion-item {
   --background: #ffffff;
-  color: black;
+  color: black ;
 }
-ion-item.item-inner {
-  border: none !important;
-}
+
 ion-list {
   background: #ffffff;
 }
 .menuButton {
   color: var(--ion-color-primary);
+}
+ion-content {
+  --background: #ffffff;
+  --color: black;
+}
+
+ion-accordion.accordion-expanding ion-item[slot="header"],
+ion-accordion.accordion-expanded ion-item[slot="header"] {
+  --color: #FFAB00;
+  --border: none;
+}
+ion-accordion.accordion-collapsed ion-item[slot="header"] {
+  --color: #FFAB00;
+  --border: none;
+}
+ion-accordion.accordion-collapsing ion-item[slot="header"] {
+  --color: #FFAB00;
+  --border: none;
 }
 
 #container {

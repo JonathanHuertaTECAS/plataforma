@@ -20,21 +20,21 @@
       *ngIf="!mobile">
       <ion-icon class="itemsMenu" slot="start" [ios]="'notifications-outline'" [md]="'notifications'"></ion-icon>
     </ion-item>
-    <ion-item slot="end">
-      <ion-accordion-group *ngIf="!mobile">
-        <ion-accordion>
-          <ion-item slot="header">
+    <ion-item slot="end" lines="none">
+      <ion-accordion-group  *ngIf="!mobile" >
+        <ion-accordion toggleIconSlot="end" >
+          <ion-item lines="none" slot="header">
             <span class="profileName">{{capitalNames}}</span>
             <ion-label>{{name}}</ion-label>
           </ion-item>
           <ion-list slot="content">
-            <ion-item routerLink="/main/perfil">
+            <ion-item lines="none" routerLink="/main/perfil">
               <ion-label>Ver Perfil</ion-label>
             </ion-item>
-            <ion-item>
+            <ion-item lines="none" >
               <ion-label routerLink="/main/cuenta">Cuenta</ion-label>
             </ion-item>
-            <ion-item>
+            <ion-item lines="none" >
               <ion-label>Cerrar Sesión</ion-label>
             </ion-item>
           </ion-list>

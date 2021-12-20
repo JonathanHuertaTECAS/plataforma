@@ -1,13 +1,119 @@
-<section class="banner-bienvenida">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="mns-user">
-					<h1>Hi, Isabel Salazar</h1>
-					<p>Gracias por tu preferencia. Tenemos un gran compromiso con cada uno de nuestros clientes. En TodoSí queremos que nos ames con los productos que te ofreceremos</p>
-					<img src="assets/libs/inher/images/tienda-user.png" alt="Tienda">
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+<ion-content [fullscreen]="true">
+
+  <ion-card class="headerCard">
+    <ion-card-content>
+      <br>
+      <ion-card class="bannerHeader">
+        <ion-card-header>
+          <ion-card-title>
+            <h1 class="nameUser"><strong>Hi, {{nameUser}}</strong></h1>
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content class="contentCard">
+          Lorem ipsum, dolor sit amet, consectetur adipisicing elit.
+        </ion-card-content>
+      </ion-card>
+    </ion-card-content>
+    <img class="bannerImg" src="assets/libs/inher/images/tienda-user.png" alt="Tienda">
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        <h4>Notificaciones</h4>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+
+          <ion-col>
+            <ion-card>
+              <ion-card-header class="cardHeader">
+                <ion-card-title>
+                  Felicidades
+                </ion-card-title>
+              </ion-card-header>
+              <ion-card-content class="cardBody">
+                <img src="assets/libs/inher/images/icono-orden-pago.png" alt="Orden de pago" class="d-block mx-auto">
+                <p>Pasa a la sucursal a recoger tu dinero, recuerda que tu primer fecha de pago es
+                  <strong>"20/12/2021"</strong></p>
+                <p>Tu número de retiro es:</p>
+                <h5>OKR2819</h5>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+		  
+          <ion-col>
+            <ion-card>
+				<ion-card-header class="cardHeader">
+					<ion-card-title>
+                  Sucursales
+                </ion-card-title>
+              </ion-card-header>
+              <ion-card-content class="cardBody">
+                <img src="assets/libs/inher/images/icono-sucursales.png" alt="Sucursales" class="d-block mx-auto">
+                <p>Sucursales cercanas</p>
+				<ion-button>Ir al mapa</ion-button>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+
+          <ion-col>
+            <ion-card>
+				<ion-card-header class="cardHeader">
+					<ion-card-title>
+                  Felicidades
+                </ion-card-title>
+              </ion-card-header>
+              <ion-card-content class="cardBody">
+                <img src="assets/libs/inher/images/icono-orden-pago.png" alt="Orden de pago" class="d-block mx-auto">
+                <p>El dinero será depositado en la cuenta que registraste en el transcurso del día</p>
+                <p><strong>Horario de transacciones de lunes a viernes de 09:00 a 17:00</strong></p>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+
+          <ion-col>
+            <ion-card>
+				<ion-card-header class="cardHeader">
+					<ion-card-title>
+                  Felicidades
+                </ion-card-title>
+              </ion-card-header>
+              <ion-card-content class="cardBody">
+                <img src="assets/libs/inher/images/icono-orden-pago.png" alt="Orden de pago" class="d-block mx-auto">
+                <p>Estos son tus datos para cobrar en</p>
+                <p><span class="bbva">BBVA</span></p>
+                <table>
+                  <tr>
+                    <td>-Orden de pago</td>
+                    <td><strong>0001</strong></td>
+                  </tr>
+                  <tr>
+                    <td>-Referencia:</td>
+                    <td><strong>1234567890js</strong></td>
+                  </tr>
+                  <tr>
+                    <td>-Monto:</td>
+                    <td><strong>$15,000.00</strong></td>
+                  </tr>
+                  <tr>
+                    <td>-Concepto:</td>
+                    <td><strong>María Isabel Hernández S.</strong></td>
+                  </tr>
+                  <tr>
+                    <td>-Vigencia:</td>
+                    <td><strong>20/10/2021</strong></td>
+                  </tr>
+                </table>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>
