@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ContractComponent } from 'src/app/pages/contract/contract.component';
 import { MycreditComponent } from 'src/app/pages/mycredit/mycredit.component';
 import { PaymentDateComponent } from 'src/app/pages/payment-date/payment-date.component';
 import { SucursalComponent } from 'src/app/pages/sucursal/sucursal.component';
@@ -26,6 +27,10 @@ const routes: Routes = [
       {
         path: 'fecha-de-pago',
         component: PaymentDateComponent
+      },
+      {
+        path: 'contratos',
+        component: ContractComponent
       }
     ]
   },

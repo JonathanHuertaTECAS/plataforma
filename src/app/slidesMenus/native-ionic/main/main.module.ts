@@ -12,6 +12,7 @@ import { MycreditComponent } from 'src/app/pages/mycredit/mycredit.component';
 import { SucursalComponent } from 'src/app/pages/sucursal/sucursal.component';
 import { PaymentDateComponent } from 'src/app/pages/payment-date/payment-date.component';
 import { MatModule } from 'src/matmodule/matmodules';
+import { ContractComponent } from 'src/app/pages/contract/contract.component';
 
 @NgModule({
   imports: [
@@ -21,7 +22,7 @@ import { MatModule } from 'src/matmodule/matmodules';
     MainPageRoutingModule,
     MatModule
   ],
-  declarations: [MainPage,HomeComponent,MycreditComponent,SucursalComponent,PaymentDateComponent],
+  declarations: [MainPage,HomeComponent,MycreditComponent,SucursalComponent,PaymentDateComponent, ContractComponent],
   exports: [MainPage]
 })
 export class MainPageModule {}

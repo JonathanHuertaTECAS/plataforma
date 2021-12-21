@@ -29,7 +29,6 @@
 }
 
 table {
-  margin: 3%;
   width: 100%;
 
   tr:nth-child(even) {
@@ -93,9 +92,9 @@ td.mat-cell.cdk-cell.cdk-column-pagos.mat-column-pagos {
 
   @media (max-width: 1024px) {
     font-size: smaller;
+    padding: 1%;
   }
 
-  padding: 0%;
 }
 
 td {

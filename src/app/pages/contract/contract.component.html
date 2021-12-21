@@ -1,0 +1,124 @@
+<ion-content [fullscreen]="true">
+
+  <ion-card class="headerCard">
+    <ion-card-header>
+      <ion-card-title>
+        <h4><strong>Contrato</strong></h4>
+      </ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  <ion-grid class="tabs">
+    <ion-row>
+
+      <ion-col>
+        <ion-chip (click)="changeTab('contrato')" [ngClass]="contract ? 'active' : 'nonActive' ">
+          <ion-label>Contrato</ion-label>
+        </ion-chip>
+      </ion-col>
+
+      <ion-col>
+        <ion-chip (click)="changeTab('caratula')" [ngClass]="frontPage ? 'active' : 'nonActive' ">
+          <ion-label>Caratula</ion-label>
+        </ion-chip>
+      </ion-col>
+
+      <ion-col>
+        <ion-chip (click)="changeTab('pagare')" [ngClass]="payment ? 'active' : 'nonActive' ">
+          <ion-label>Pagare</ion-label>
+        </ion-chip>
+      </ion-col>
+
+      <ion-col>
+        <ion-chip (click)="changeTab('referencia')" [ngClass]="payRef ? 'active' : 'nonActive' ">
+          <ion-label>Referencia de pago</ion-label>
+        </ion-chip>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+  <ion-card class="contract" *ngIf="contract">
+    <ion-card-header>
+      <ion-card-title>
+        <h2><strong>Contrato</strong></h2>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci provident aut quod, amet natus veniam velit
+        magnam sequi temporibus accusantium, perspiciatis dignissimos eveniet voluptatem modi earum esse et vel ad!
+        Error officia esse culpa quidem natus nulla cumque laborum neque pariatur ducimus eius, quasi minima distinctio
+        alias nobis debitis voluptatem, accusantium fugiat et quis! Distinctio impedit, nobis voluptatibus minus
+        mollitia.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, ipsum nemo minus debitis doloribus. Magnam
+        distinctio fugiat modi quaerat, nisi voluptatibus rem incidunt numquam quasi eaque animi voluptatem laboriosam
+        et.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde omnis iste tempore vero aspernatur cum
+        voluptatibus veniam perspiciatis fugiat eaque nulla nostrum, quo consequuntur eveniet sed quaerat fuga,
+        doloremque, nisi.</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni facilis nesciunt atque cumque, ut? Ducimus
+        fuga, saepe facere, expedita non necessitatibus tenetur ex exercitationem aliquid recusandae provident nemo,
+        sapiente, voluptatum!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, ipsum nemo minus debitis doloribus. Magnam
+        distinctio fugiat modi quaerat, nisi voluptatibus rem incidunt numquam quasi eaque animi voluptatem laboriosam
+        et.</p>
+
+      <ion-grid class="nip">
+        <ion-row>
+          <ion-col>
+            <h5>Firmo de conformidad</h5>
+            <p>Ingresa el código NIP</p>
+          </ion-col>
+        </ion-row>
+        <ion-row class="pinCode">
+          <ion-col>
+            <ion-input type="number"></ion-input>
+          </ion-col>
+          <ion-col>
+            <ion-input type="number"></ion-input>
+          </ion-col>
+          <ion-col>
+            <ion-input type="number"></ion-input>
+          </ion-col>
+          <ion-col>
+            <ion-input type="number"></ion-input>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button>Continuar</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="frontPage" *ngIf="frontPage">
+    <ion-card-header>
+      <ion-card-title>
+        <h2><strong>Caratula</strong></h2>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="payment" *ngIf="payment">
+    <ion-card-header>
+      <ion-card-title>
+        <h2><strong>Pagare</strong></h2>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="payRef" *ngIf="payRef">
+    <ion-card-header>
+      <ion-card-title>
+        <h2><strong>Referencia de pago</strong></h2>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
