@@ -1,0 +1,60 @@
+
+.background {
+  --background: none;
+  background-image: url('../../../assets/libs/inher/images/pal-negocio-bg-login.png');
+  background-position: center center;
+  position: relative;
+  height: 80%;
+}
+.padding{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.finalButtons {
+  text-align: center;
+
+  ion-button {
+    --background: #594196;
+    --background-activated: #3880ff;
+    --background-activated-opacity: 1;
+    --background-focused: #3880ff;
+    --background-focused-opacity: 1;
+    --background-hover: #ffffff;
+    --background-hover-opacity: 1;
+    --border-color: #594196;
+    --border-radius: 8px;
+    --border-style: solid;
+    --border-width: 1px;
+    --color: #ffffff;
+    --color-activated: #ffffff;
+    --color-focused: #ffffff;
+    --color-hover: #594196;
+    transition: color .65s ease-in-out, background-color .65s ease-in-out, border-color .65s ease-in-out, box-shadow .65s ease-in-out;
+  }
+  .secondButton {
+      --background: #ffffff;
+      --background-activated: #3880ff;
+      --background-activated-opacity: 1;
+      --background-focused: #3880ff;
+      --background-focused-opacity: 1;
+      --background-hover: #594196;
+      --background-hover-opacity: 1;
+      --border-color: #594196;
+      --border-radius: 8px;
+      --border-style: solid;
+      --border-width: 1px;
+      --color: #594196;
+      --color-activated: #ffffff;
+      --color-focused: #ffffff;
+      --color-hover: #ffffff;
+      transition: color .65s ease-in-out, background-color .65s ease-in-out, border-color .65s ease-in-out, box-shadow .65s ease-in-out;
+    }
+}
+
+.backgroundImg{
+  --background: none;
+  background-image: url('../../../assets/libs/inher/images/pal-negocio-bg-login-monto.png');
+  background-position: center center;
+}
+.verticalLine { border-left: thick solid #3C3C7F; }
