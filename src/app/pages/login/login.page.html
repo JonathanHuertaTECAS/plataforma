@@ -1,0 +1,77 @@
+
+<ion-content>
+<div class="background">
+  <ion-row >
+    <ion-col size="12" class="ion-padding">
+      <div>
+        <!-- <img src="assets/libs/inher/images/logo-pal-negocio-login.png" alt="Logo Pal' Negocio" class="mx-auto d-block logo-log"> -->
+        <img  src="assets/libs/inher/images/pal-negocio-tienda.png" alt="Tienda" class="mx-auto d-block tienda" style="width: 300px;">
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-card>
+    <ion-row class="ion-padding">
+      <ion-col
+          size="12"
+          size-lg="6"
+          size-md="6"
+          size-sm="6">
+          <ion-card-content>
+            <div style="width: 100%; text-align: center;" class="ion-padding">
+              <h1 style="font-size: 30px; color: #3c3c7f;">¡Hola!</h1>
+              <h4  style="font-size: 20px;">Bienvenido</h4>
+              <p  style="font-size: 20px;"><span>Ingresa a tu cuenta</span></p>
+              <form style="margin-top: 50px;">
+                  <ion-item>
+                    <ion-input  placeholder="Correo / Teléfono"></ion-input>
+                  </ion-item>
+                  <br>
+                  <ion-item>
+                    <ion-input placeholder="Contraseña"></ion-input>
+                  </ion-item>
+              </form>
+              <br><br>
+              <a href="#" class="olvido-contrasena" [routerLink]="['/login/recuperar']" style="color: #3c3c7f;">¿Olvidaste la contraseña?</a>
+              <br><br><br>
+              <ion-row class="padding">
+                <ion-col class="finalButtons">
+                  <ion-button  expand="block" class="secondButton">Iniciar sesión</ion-button>
+                </ion-col>
+              </ion-row>
+              <hr>
+              <ion-row class="padding">
+                <ion-col  class="finalButtons ">
+                  <ion-button expand="block" class="secondButton">Registrarme</ion-button>
+                </ion-col>
+              </ion-row>
+            </div>
+          </ion-card-content>
+        </ion-col>
+        <ion-col
+          size="12"
+          size-lg="6"
+          size-md="6"
+          size-sm="6">
+          <ion-card-content class="backgroundImg verticalLine" >
+            <div style="width: 100%; text-align: center;" class="ion-padding">
+              <p style="font-size: 30px; padding-top: 100px; color: #3c3c7f;"><span>Estás solicitando:</span></p>
+              <br>
+              <span style="font-size: 50px; color: #3c3c7f;">$10,000.00</span>
+              <br><br>
+              <p style="font-size: 20px;">El crédito debe ser saldado en</p>
+              <p style="font-size: 20px;">12 pagos <strong>quincenales</strong></p>
+              <p style="font-size: 20px;">Tu pago <strong>quincenal</strong> será:</p>
+              <p><span class="pagoqm" style="font-size: 50px; color: #3c3c7f;">$1,157.52</span></p>
+
+            </div>
+            <br><br>
+            <div class="legales">
+              <p style="font-size: 20px;">Más de tu seguro | <a style="color: #3c3c7f;" href="#">Términos y condiciones</a> | <a style="color: #3c3c7f;" href="#">Aviso de privacidad</a> | TDSFIN S.A.P.I de C.V.</p>
+            </div>
+          </ion-card-content>
+        </ion-col>
+      </ion-row>
+  </ion-card>
+  <br><br>
+  </div>
