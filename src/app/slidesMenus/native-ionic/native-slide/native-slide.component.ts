@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NativeSlideComponent implements OnInit {
   public appPages = [
     { title: 'Home', url: '/main/home', icon: 'home' },
-    { title: 'Productos', url: '/main/productos', icon: 'cart' },
+   // { title: 'Productos', url: '/main/productos', icon: 'cart' },
     { title: 'Sucursal cercana', url: '/main/sucursales', icon: 'map' },
   ];
   public labels = ['Family'];
