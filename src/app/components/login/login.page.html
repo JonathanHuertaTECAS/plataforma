@@ -7,7 +7,7 @@
         <!-- <img src="assets/libs/inher/images/logo-pal-negocio-login.png" alt="Logo Pal' Negocio" class="mx-auto d-block logo-log"> -->
         <img  src="assets/libs/inher/images/pal-negocio-tienda.png" alt="Tienda" class="mx-auto d-block tienda" style="width: 200px;">
       </div>
-      <div *ngIf="ruteNav === 'registro'">
+      <div *ngIf="ruteNav === 'registro' || ruteNav === 'recuperar'">
         <!-- <img src="assets/libs/inher/images/logo-pal-negocio-login.png" alt="Logo Pal' Negocio" class="mx-auto d-block logo-log"> -->
         <img  src="assets/libs/inher/images/logo-pal-negocio-login.png" alt="Tienda" class="mx-auto d-block tienda" style="width: 200px;">
       </div>
@@ -180,5 +180,35 @@
         </ion-col>
       </ion-row>
   </ion-card>
+
+  <ion-row *ngIf="ruteNav === 'recuperar'">
+    <ion-col size="3" class="ion-padding">
+    </ion-col>
+    <ion-col
+          size="12"
+          size-lg="6"
+          size-md="6"
+          size-sm="12" class="ion-padding">
+      <ion-card >
+        <div style="width: 100%; text-align: center;" >
+          <h1 style="font-size: 30px; padding-top: 10px; color: #3c3c7f;"><span>¡Hola!</span></h1>
+          <p style="font-size: 20px; color: #3c3c7f;">Ingresa tu correo</p>
+          <p style="font-size: 20px; color: #3c3c7f;">para recuperar tu contraseña</p>
+          <form>
+            <ion-item class="ion-padding">
+              <ion-label position="stacked">Correo</ion-label>
+              <ion-input  placeholder="Correo"></ion-input>
+            </ion-item>
+            <ion-row class="padding">
+              <ion-col class="finalButtons">
+                <ion-button expand="block" class="secondButton">Enviar</ion-button>
+                <br>
+              </ion-col>
+            </ion-row>
+          </form>
+        </div>
+      </ion-card>
+    </ion-col>
+  </ion-row>
   <br><br>
   </div>
