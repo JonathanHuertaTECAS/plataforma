@@ -32,3 +32,4 @@ npm-debug.log*
 .angular/cache/*
 
 package-lock.json
+.firebase/*

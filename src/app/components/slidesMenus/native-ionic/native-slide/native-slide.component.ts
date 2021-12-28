@@ -17,7 +17,13 @@ export class NativeSlideComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.menuSlide = true;
+    if(window.location.href.search('main') > 1){
+      this.menuSlide = true;
+    }
+    else{
+      this.menuSlide = false;
+    }
+
     this.img = '../../../assets/libs/inher/images/logo-pal-negocio-lateral.png';
   }
   closeSlide() {

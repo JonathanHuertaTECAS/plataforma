@@ -6,7 +6,7 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { NativeSlideModule } from './slidesMenus/native-ionic/native-slide/native-slide.module';
+import { NativeSlideModule } from './components/slidesMenus/native-ionic/native-slide/native-slide.module';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
